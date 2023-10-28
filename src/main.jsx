@@ -13,7 +13,8 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Index/>
+        element: <Index/>,
+        loader: clientesLoader,
       },
       {
         path: '/clientes/nuevo',
